@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        p{font-size: larger; font-weight: bold;}
+        body{background-color: blanchedalmond;}
+        h1{text-align: center; letter-spacing: 5px;}
+        legend{text-align: center; font-weight: bold; font-size: larger;}
+    </style>
+</head>
+<body>
+    <h1>REGISTER YORSELF</h1>
+    <hr>
+    <center>
+        <form>
+            <p>
+                Profile Picture: <input type="file">
+            </p>
+            <p>
+                Name: <input type="text" placeholder="Enter Your Name" required>
+            </p>
+            <p>
+                Age: <input type="number" placeholder="Enter Your Age" required>
+            </p>
+            <fieldset>
+                <legend>Gender</legend>
+                <p>
+                    Male: <input type="checkbox"> 
+                    Female: <input type="checkbox">
+                </p>
+            </fieldset>
+            <p>
+                Select Password: <input type="password" placeholder="Use a Strong Password" pattern="[A-Z] [a-z] [0-9]" required>
+            </p>
+            <p>
+                City: <select>
+                    <option value="islamabad">Islamabad</option>
+                    <option value="karachi">Karachi</option>
+                    <option value="lahore">Lahore</option>
+                    <option value="quetta">Quetta</option>
+                    <option value="rawalpindi">Rawalpindi</option>
+                    <option value="bahawalpur">Bahawalpur</option>
+                    <option value="abottabad">Abottabad</option>
+                </select>
+            </p>
+            <p>
+                Country: <input type="text" value="Pakistan" readonly>
+            </p>
+            <p>
+                Phone number:
+            <select>
+                <option>+92</option>
+            </select>
+            <input type="text" size="10" maxlength="10" pattern="[0-9]" placeholder="312 5369395" required>
+            </p>
+            <p>
+                Date of Birth: <input type="date" required>
+            </p>
+            <p>
+                Email Address: <input type="email" placeholder="yourname123@gmail.com" required>
+            </p>
+            <p>
+                Favourite Colour: <input type="color">
+            </p>
+            <fieldset>
+                <legend>Languages</legend>
+                <p>
+                    Python: <input type="radio">
+                    PHP: <input type="radio">
+                    Dart: <input type="radio">
+                    Java: <input type="radio">
+                </p>
+            </fieldset>
+            <p>
+                <textarea cols="30" rows="8" placeholder="Write Your Hobbies Here."></textarea>
+            </p>
+            <p>
+                <input type="submit" style="background-color: green;">
+                <input type="reset" style="background-color: red;">
+            </p>
+        </form>
+    </center>
+</body>
+</html>
