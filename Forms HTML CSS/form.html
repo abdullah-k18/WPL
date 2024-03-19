@@ -4,15 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
-    <style>
-        p{font-size: larger; font-weight: bold;}
-        body{background-color: blanchedalmond;}
-        h1{text-align: center; letter-spacing: 5px;}
-        legend{text-align: center; font-weight: bold; font-size: larger;}
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>REGISTER YORSELF</h1>
+    <h1>DETAILS FOR RESUME</h1>
     <hr>
     <center>
         <form>
@@ -23,17 +18,17 @@
                 Name: <input type="text" placeholder="Enter Your Name" required>
             </p>
             <p>
-                Age: <input type="number" placeholder="Enter Your Age" required>
+                Current Position: <input type="number"  placeholder="Enter Your Current Position" required>
             </p>
             <fieldset>
-                <legend>Gender</legend>
+                <legend>Currently</legend>
                 <p>
-                    Male: <input type="checkbox"> 
-                    Female: <input type="checkbox">
+                    Student: <input type="checkbox"> 
+                    Professional: <input type="checkbox">
                 </p>
             </fieldset>
             <p>
-                Select Password: <input type="password" placeholder="Use a Strong Password" pattern="[A-Z] [a-z] [0-9]" required>
+                Current Semester (if student): <input type="number">
             </p>
             <p>
                 City: <select>
@@ -57,16 +52,23 @@
             <input type="text" size="10" maxlength="10" pattern="[0-9]" placeholder="312 5369395" required>
             </p>
             <p>
-                Date of Birth: <input type="date" required>
+                Last Qualification: <select>
+                    <option value="bachelors">Bachelors</option>
+                    <option value="masters">Masters</option>
+                    <option value="intermediate">Intermediate</option>
+                </select>
+            </p>
+            <p>
+                Last Qualification (Start Date): <input type="date" required>
+            </p>
+            <p>
+                Last Qualification (End Date): <input type="date" required>
             </p>
             <p>
                 Email Address: <input type="email" placeholder="yourname123@gmail.com" required>
             </p>
-            <p>
-                Favourite Colour: <input type="color">
-            </p>
             <fieldset>
-                <legend>Languages</legend>
+                <legend>Expertise</legend>
                 <p>
                     Python: <input type="radio">
                     PHP: <input type="radio">
@@ -75,7 +77,7 @@
                 </p>
             </fieldset>
             <p>
-                <textarea cols="30" rows="8" placeholder="Write Your Hobbies Here."></textarea>
+                <textarea cols="30" rows="8" placeholder="What are your career objectives?"></textarea>
             </p>
             <p>
                 <input type="submit" style="background-color: green;">

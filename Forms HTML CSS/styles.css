@@ -1,0 +1,12 @@
+p{
+    font-size: larger; font-weight: bold;
+}
+body{
+    background-color: blanchedalmond;
+}
+h1{
+    text-align: center; letter-spacing: 5px;
+}
+legend{
+    text-align: center; font-weight: bold; font-size: larger;
+}
